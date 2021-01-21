@@ -8,7 +8,7 @@ function fre_child_convert_profile($profile){
 		$profile->author_name = $name[0]. ' '.$name[1][0];
 	}
 	if( isset($name[2]) && !empty( $name[2] ) ){
-		$profile->author_name.=$name[2];
+		$profile->author_name.=$name[2][0];
 	}
 	return $profile;
 }
