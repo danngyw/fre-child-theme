@@ -6,7 +6,7 @@ function fre_child_convert_profile($profile){
 		return $profile;
 
 	$name 		= explode(" ", $profile->author_name);
-	//var_dump($name);
+
 	if( isset($name[1]) ){
 		$profile->author_name = $name[0]. ' '.$name[1][0];
 	}
@@ -30,5 +30,3 @@ function fre_child_convert_bid($bid){
 }
 
 add_filter( 'ae_convert_bid', 'fre_child_convert_bid', 99 );
-
-//profile_display 
